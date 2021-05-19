@@ -13,6 +13,15 @@ function sumFirstLast(arr){
   sum = arr[0] + arr[arr.length - 1];
   return sum;
 }
+
+// función que devuelva la suma del número más grande y el más pequeño del array. Por ejemplo, sumMaxMin([1,3,10]) debería devolver 10 + 1 = 11, y sumMaxMin([-2,-5,-10]) debería devolver -2 + -10 = -12. 
+
+function sumMaxMin(arr) {
+  var maxNumber = Math.max.apply(null, arr);
+  var minNumber = Math.min.apply(null, arr);
+  
+  return maxNumber + minNumber;
+}
     
 describe("Sum1toN", function() { 
     it("should return 3 when we pass 2 as an argument", function() { 
@@ -36,4 +45,13 @@ describe("sumFirstLast", function() {
     it("should return -10 when we pass [-6,23,3,-4] as an argument", function() { 
         expect(sumFirstLast([-6,23,3,-4])).toEqual(-10); 
     }); 
+});
+
+describe("sumMaxMin", function() {
+  it("Debe devolver 11 cuando pasamos [1,3,10] como argumento", function() {
+    expect(sumMaxMin([1,3,10])).toEqual(11);
+  });
+  it("Debe devolver -12 cuando pasamos [-2,-5,-10] como argumento", function() {
+    expect(sumMaxMin([-2,-5,-10])).toEqual(-12);
+  });
 });
