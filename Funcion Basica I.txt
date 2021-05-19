@@ -1,31 +1,31 @@
-1.
+//1.
 
 function a(){
     return 35;
 }
 console.log(a())
 
-Salida: 35
+//Salida: 35
 
-2.
+//2.
 
 function a(){
     return 4;
 }
 console.log(a()+a());
 
-Salida: 8
+//Salida: 8
 
-3.
+//3.
 
 function a(b){
     return b;
 }
 console.log(a(2)+a(4));
 
-Salida: 6
+//Salida: 6
 
-4.
+//4.
 
 function a(b){
     console.log(b);
@@ -33,9 +33,9 @@ function a(b){
 }
 console.log(a(3));
 
-Salida: 3, 9
+//Salida: 3, 9
 
-5.
+// 5.
 
 function a(b){
    return b*4;
@@ -43,7 +43,7 @@ function a(b){
 }
 console.log(a(10));
 
-Salida: 40
+//Salida: 40
 
 6. 
 
